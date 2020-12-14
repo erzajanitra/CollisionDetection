@@ -20,9 +20,21 @@ Class Sprite merupakan sebuah class yang bertugas untuk mengenkapsulasi objek - 
   3.  Getter dan setter untuk variabel dalam class
   4.  Methode yang bertugas untuk mengatur visibiltas
   5.  Methode Bounding: 
+        <img                   src=https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/sprite%20bounding.jpg width="200" height="150" />
+        
       Methode ini akan membuat Rectangle baru menggunakan koordinat dan ukuran yang telah             didapatkan dengan kata lain semua objek dianggap Rectangle
+     
+      
       
 # Alien 
+Class Alien ini merupakan extends dari class Sprite yang dimana class Alien ini termasuk inheritance dari superclass Sprite. Berikut Method - method yang terdapat dalam class Alien: 
+  1.  Constructor untuk menginisialisasi koordinat dan gambar Alien. Untuk mendapatkan gambar         alien nya itu sudah terdapat pada bagian superclass Sprite.
+  2.  Methode untuk bergeraknya sebuah objek Alien: 
+      (fotonya) 
+      Alien bergerak ke kiri, jika sebuah objek Alien itu keluar dari window sebelah kiri (x<0)       maka objek Alien tersebut akal muncul kembali ke posisi awal (intial_x)
+      
+# Missile 
+
   
   
   
