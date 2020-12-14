@@ -15,4 +15,19 @@ Berdasarkan karakteristik dari games berdimensi 2D, terdapat sebuah class yang b
 
 # Sprite 
 Class Sprite merupakan sebuah class yang bertugas untuk mengenkapsulasi objek - objek yang dapat bergerak di suatu game. Pada class ini, terdapat bebrpa methode yang akan digunakan pada class lainya. Method - method teresebut antara lain : 
+  1.  Constructor yang akan menginisialisasi koordinat x, y dan variable visible
+  2.  Method - method yang digunakan untuk mendapatkan gambar, dan dimensi. Dimensi disini yaitu       height and width pada gambar tersebut
+  3.  Getter dan setter untuk variabel dalam class
+  4.  Methode yang bertugas untuk mengatur visibiltas
+  5.  Methode Bounding: 
+      Methode ini akan membuat Rectangle baru menggunakan koordinat dan ukuran yang telah             didapatkan dengan kata lain semua objek dianggap Rectangle
+      
+# Alien 
   
+  
+  
+  
+  
+  
+# Class Diagram Collision Detection 
+
