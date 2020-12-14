@@ -69,10 +69,36 @@ Method - method yang terdapat dalam class :
       Ketika key dilepas maka delta x dan delta y diset kembali menjadi 0 sesuai dengan key yang       telah telah dilepas
       
   6.   Method unruk menembakkan Missile
-      
 # Board
-
+Method - method dalam class : 
+  1.  Constructor yang menginisialisasi window Board dari method lain
   
+       <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/board%20inisialisasi.jpg"/> 
+       
+  2.  Method yang akan dipanggil di constructor
+  3.  Method - method untuk menggambar GUI objek Spaceship, Missile, Alien, dan menulis status         jumlah Alien.
+  4.  Method untuk menggambar GUI saat permainan selesai 
+  
+      <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/board%20game%20over.jpg"/> 
+      
+  5.  Method untuk memperbarui posisi Spaceship dengan cara memanggil methode move
+  6.  Method untuk memperbaru posisi Missile, dengan cara membuat objek Missile dan meng-loop         sesuai dengan banyaknya missile untuk memanggilmethode move atau remove
+  7.  Method untuk memperbarui posisi Alien. Sekaligus mengecek apakah objek masih ada atau           tidak untuk menentukan selesainya permainan. Methode lain dapat digunakan yaitu dengan           meng-loop untuk memanggil method move atau remove
+  8.  Method untuk mengecek apakah objek bertabrakan atau tidak
+      
+        <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/board%20cek%20tabrakan.jpg"/> 
+        
+  9. Terdapat class baru yang bersifat private yang dapat membaca keyboard apabila keyboard          dilepas ataupun ditekan
+       
+  
+# CollisionEx
+Method - method yang digunakan pada class ini antara lain : 
+  1.   Constructor yang akan memanggil insisialisi UI 
+  2.   Methode untuk menginisialisasi UI, yang dimana akan secara langhsung membuat objek Board          baru
+  
+       <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/collisionex.jpg"/> 
+      
+  3.   Class main yang akan menjalankan sesuai eventnya dan akan menginisialisasi permainan  
 
 # CLass Diagram 
 ![classdiagram](https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/class%20diagramcollision%20detection.jpg)
