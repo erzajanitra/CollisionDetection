@@ -5,7 +5,7 @@ Contributor :
   2. Erza Janitradevi - 153
   3. Rayhan Daffa Alhafish - 227 
   
-# APPLIKASI COLLISION DETECTION 
+# APLIKASI COLLISION DETECTION 
 Banyak aplikasi games yang menggunakan atau yang meng-handle collision, terutama permainan arkade. Permainan arkade sendiri adalah sebuah mesin permainan hiburan yang dioperasikan dengan koin yang terpasang di tempat-tempat bisnis, dan pusat permainan hiburan. Bentuk kebayakan permainan arkade adalah permainan video, mesin pinbol, dan lainnya. 
 
 Karakteristik dari games yang berdimensi 2D yaitu terdapatnya program yang berisi objek - objek yang bergerak. Objek - objek tersebut dapat bertumbukan (collision) satu sama lain. Oleh karena itu, untuk dapat menangani collision yang berlebihan maka diperlukannya sebuah cara dengan menggunakan Collision Detection. 
@@ -23,9 +23,8 @@ Class Sprite merupakan sebuah class yang bertugas untuk mengenkapsulasi objek - 
           
       Methode ini akan membuat Rectangle baru menggunakan koordinat dan ukuran yang telah             didapatkan dengan kata lain semua objek dianggap Rectangle
       
-        <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/sprite%20bounding.jpg"/>
+       <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/sprite%20bounding.jpg"/>
       
-         
 
 # Alien 
 Class Alien ini merupakan extends dari class Sprite yang dimana class Alien ini termasuk inheritance dari superclass Sprite. Berikut Method - method yang terdapat dalam class Alien: 
@@ -37,7 +36,43 @@ Class Alien ini merupakan extends dari class Sprite yang dimana class Alien ini 
       Alien bergerak ke kiri, jika sebuah objek Alien itu keluar dari window sebelah kiri (x<0) maka objek Alien tersebut akal muncul kembali ke posisi awal (intial_x)
    
 # Missile 
+Method - method dalam class : 
+  1.  Constructor untuk menginisialisasi objek 
+  2.  Method agar objek dapat bergerak : 
+   <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/missile%20methode.jpg"/>
+   
+   Karena Missile bergerak ke arah kanan, maka untuk menggeser posisi Missile dengan menggunakan koordinat objek yang kemudian ditambah dengan kecepatan objek Missile. Missile akan menghilang ketika Misille melebihi lebar board
+   
+# Spaceship
+Method - method yang terdapat dalam class : 
+  1.  Constructor untuk menginisialisasi objek
+  2.  Method untuk menginisialisi Spaceship itu sendiri dan objek Missile juga dibuat list             karena Missile dan Spaceship akan berjalan bersama. 
+  3.  Method untuk mendapatkan Missile 
+  
+      <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/spaceship%20miselle%20caranya.jpg"/>
+      
+  4.  Method agar objek dapat bergerak 
+  
+      <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/spaceship%20move.jpg"/>
+  
+      Sebuah objek akan bergerak mengikuti perintah keyboard, maka untuk menggeser posisi koordinat dari objek maka objek tersebut ditambah dengan perpindahan objek Spaceship (dx,dy). Ketika objek sudah berada di paling kiri maka posisi tersebut di sama dengankan 1
+   
+  5.  Method yang digunakan untuk mengambil key yang diperintahkan pada keyboard
+      Terdapat dua kondisi yaitu dimana keyboard melakukan perintah menekan sesuatu (kiri, kanan,       space, atas, dan bawah) dan kondisi dimana keyboard itu dilepas. Ketika keyboard                 memerintahkan sesuatu maka,
+      
+      <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/spaceship%20key.jpg"/>
+      
+      Pada kondisi kedua, maka diperlukannya sebuah method untuk mengembalikan status perpindahan       key
+      
+       <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/spaceship%20kalo%20dilepas.jpg"/> 
+       
+      Ketika key dilepas maka delta x dan delta y diset kembali menjadi 0 sesuai dengan key yang       telah telah dilepas
+      
+  6.   Method unruk menembakkan Missile
+      
+# Board
 
+  
 
 # CLass Diagram 
 ![classdiagram](https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/class%20diagramcollision%20detection.jpg)
