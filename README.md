@@ -35,5 +35,18 @@ Class Alien ini merupakan extends dari class Sprite yang dimana class Alien ini 
       <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/alien%20move.jpg"/>
       
       Alien bergerak ke kiri, jika sebuah objek Alien itu keluar dari window sebelah kiri (x<0) maka objek Alien tersebut akal muncul kembali ke posisi awal (intial_x)
-      
+   
 # Missile 
+
+
+# CLass Diagram 
+![classdiagram](https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/class%20diagramcollision%20detection.jpg)
+
+# Jalannya Program 
+Berikut adalah contoh jalannya program:
+
+<img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/ezgif.com-gif-maker%20(1).gif" width="400" height="350"/>
+
+Berikut adalah tampilan jika pemain tidak berhasil dalam permainan dan kita permainan selesai: 
+
+<img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/spaceship1.gif" width="400" height="350"/>
