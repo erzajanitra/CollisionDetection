@@ -10,10 +10,10 @@ Banyak aplikasi games yang menggunakan atau yang meng-handle collision, terutama
 
 Karakteristik dari games yang berdimensi 2D yaitu terdapatnya program yang berisi objek - objek yang bergerak. Objek - objek tersebut dapat bertumbukan (collision) satu sama lain. Oleh karena itu, untuk dapat menangani collision yang berlebihan maka diperlukannya sebuah cara dengan menggunakan Collision Detection. 
 
-# Cara Kerja Program 
+## Cara Kerja Program 
 Berdasarkan karakteristik dari games berdimensi 2D, terdapat sebuah class yang bertugas mengenkapsulasi objek - objek yang dapat bergerak di suatu game. Objek - objek yang bergerak tersebut adalah Alien, Spaceship, dan Missile. Kemudian, objek - objek tersebut akan di inisialisasi pada saat objek Board dibuat dan akan objek - objek tersebut dipakai saat game dijalankan. 
 
-# Sprite 
+### Sprite 
 Class Sprite merupakan sebuah class yang bertugas untuk mengenkapsulasi objek - objek yang dapat bergerak di suatu game. Pada class ini, terdapat bebrpa methode yang akan digunakan pada class lainya. Method - method teresebut antara lain : 
   1.  Constructor yang akan menginisialisasi koordinat x, y dan variable visible
   2.  Method - method yang digunakan untuk mendapatkan gambar, dan dimensi. Dimensi disini yaitu       height and width pada gambar tersebut
@@ -26,7 +26,7 @@ Class Sprite merupakan sebuah class yang bertugas untuk mengenkapsulasi objek - 
        <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/sprite%20bounding.jpg"/>
       
 
-# Alien 
+### Alien 
 Class Alien ini merupakan extends dari class Sprite yang dimana class Alien ini termasuk inheritance dari superclass Sprite. Berikut Method - method yang terdapat dalam class Alien: 
   1.  Constructor untuk menginisialisasi koordinat dan gambar Alien. Untuk mendapatkan gambar         alien nya itu sudah terdapat pada bagian superclass Sprite.
   2.  Methode untuk bergeraknya sebuah objek Alien: 
@@ -35,7 +35,7 @@ Class Alien ini merupakan extends dari class Sprite yang dimana class Alien ini 
       
       Alien bergerak ke kiri, jika sebuah objek Alien itu keluar dari window sebelah kiri (x<0) maka objek Alien tersebut akal muncul kembali ke posisi awal (intial_x)
    
-# Missile 
+### Missile 
 Method - method dalam class : 
   1.  Constructor untuk menginisialisasi objek 
   2.  Method agar objek dapat bergerak : 
@@ -43,7 +43,7 @@ Method - method dalam class :
    
    Karena Missile bergerak ke arah kanan, maka untuk menggeser posisi Missile dengan menggunakan koordinat objek yang kemudian ditambah dengan kecepatan objek Missile. Missile akan menghilang ketika Misille melebihi lebar board
    
-# Spaceship
+### Spaceship
 Method - method yang terdapat dalam class : 
   1.  Constructor untuk menginisialisasi objek
   2.  Method untuk menginisialisi Spaceship itu sendiri dan objek Missile juga dibuat list             karena Missile dan Spaceship akan berjalan bersama. 
@@ -69,7 +69,7 @@ Method - method yang terdapat dalam class :
       Ketika key dilepas maka delta x dan delta y diset kembali menjadi 0 sesuai dengan key yang       telah telah dilepas
       
   6.   Method unruk menembakkan Missile
-# Board
+### Board
 Method - method dalam class : 
   1.  Constructor yang menginisialisasi window Board dari method lain
   
@@ -91,7 +91,7 @@ Method - method dalam class :
   9. Terdapat class baru yang bersifat private yang dapat membaca keyboard apabila keyboard          dilepas ataupun ditekan
        
   
-# CollisionEx
+### CollisionEx
 Method - method yang digunakan pada class ini antara lain : 
   1.   Constructor yang akan memanggil insisialisi UI 
   2.   Methode untuk menginisialisasi UI, yang dimana akan secara langhsung membuat objek Board          baru
@@ -100,10 +100,10 @@ Method - method yang digunakan pada class ini antara lain :
       
   3.   Class main yang akan menjalankan sesuai eventnya dan akan menginisialisasi permainan  
 
-# CLass Diagram 
+## CLass Diagram 
 ![classdiagram](https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/class%20diagramcollision%20detection.jpg)
 
-# Jalannya Program 
+## Jalannya Program 
 Berikut adalah contoh jalannya program:
 
 <img src="https://github.com/erzajanitra/CollisionDetection/blob/master/gambar2%20buat%20PBO%20-%20COLLISON/ezgif.com-gif-maker%20(1).gif" width="400" height="350"/>
