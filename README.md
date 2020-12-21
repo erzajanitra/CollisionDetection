@@ -6,7 +6,7 @@ Contributor :
   3. Rayhan Daffa Alhafish - 227 
   
 # APLIKASI COLLISION DETECTION 
-Banyak aplikasi games yang menggunakan atau yang meng-handle collision, terutama permainan arkade. Permainan arkade sendiri adalah sebuah mesin permainan hiburan yang dioperasikan dengan koin yang terpasang di tempat-tempat bisnis, dan pusat permainan hiburan. Bentuk kebayakan permainan arkade adalah permainan video, mesin pinbol, dan lainnya. 
+Banyak aplikasi games yang menggunakan atau yang meng-handle collision, terutama permainan arkade. Permainan arkade sendiri adalah sebuah mesin permainan hiburan yang dioperasikan dengan koin yang terpasang di tempat-tempat bisnis, dan pusat permainan hiburan. Bentuk kebanyakan permainan arkade adalah permainan video, mesin pinbol, dan lainnya. 
 
 Karakteristik dari games yang berdimensi 2D yaitu terdapatnya program yang berisi objek - objek yang bergerak. Objek - objek tersebut dapat bertumbukan (collision) satu sama lain. Oleh karena itu, untuk dapat menangani collision yang berlebihan maka diperlukannya sebuah cara dengan menggunakan Collision Detection. 
 
